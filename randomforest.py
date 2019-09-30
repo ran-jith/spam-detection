@@ -55,9 +55,7 @@ with open("SMSSpamCollection.txt") as f:
                 stopwordsrem.append(r)
         my_lst_str = ' '.join(stopwordsrem)
         line_to_write=line[:4]+" "+my_lst_str+"\n"
-        #appendFile.write(line_to_write)
-        ##print(line[:4]+" "+my_lst_str)
-        #print (my_lst_str)
+        
         
         
         w_c=len(re.findall(r'\w+', my_lst_str))
